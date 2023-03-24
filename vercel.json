@@ -1,0 +1,16 @@
+{
+  "name": "deploy-node-in-vercel",
+  "version": 2,
+  "public": true,
+  "functions": {
+    "api/index.js": {
+      "runtime": "vercel-php@0.5.2"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.js"
+    }
+  ]
+}
