@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 route.get('/cpf/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(` http://165.22.230.154:3000/api/puxar?type=cpf3&q=${cpf}&token=Eltonpainel`);
+    const response = await axios.get(` https://busc1lok-api.onrender.com/api/puxar?type=cpf3&q=${cpf}&token=Eltonpainel`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -26,7 +26,7 @@ route.get('/cpf/:cpf', async (req, res) => {
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`http://165.22.230.154:3000/api/puxar?type=cnpj&q=${cnpj}&token=Eltonpainel`);
+    const response = await axios.get(`https://busc1lok-api.onrender.com/api/puxar?type=cnpj&q=${cnpj}&token=Eltonpainel`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -38,7 +38,7 @@ route.get('/cnpj/:cnpj', async (req, res) => {
 route.get('/nome/:nome', async (req, res) => {
   try {
     const nome = req.params.nome;
-    const response = await axios.get(`http://165.22.230.154:3000/api/puxar?type=nome&q=${nome}&token=Eltonpainel`);
+    const response = await axios.get(`https://busc1lok-api.onrender.com/api/puxar?type=nome&q=${nome}&token=Eltonpainel`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -50,7 +50,7 @@ route.get('/nome/:nome', async (req, res) => {
 route.get('/placa/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`http://165.22.230.154:3000/api/puxar?type=placa&q=${placa}&token=Eltonpainel`);
+    const response = await axios.get(`https://busc1lok-api.onrender.com/api/puxar?type=placa&q=${placa}&token=Eltonpainel`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -61,7 +61,7 @@ route.get('/placa/:placa', async (req, res) => {
 route.get('/telefone/:telefone', async (req, res) => {
   try {
     const telefone = req.params.telefone;
-    const response = await axios.get(`http://165.22.230.154:3000/api/puxar?type=telefone&q=${telefone}&token=Eltonpainel`);
+    const response = await axios.get(`https://busc1lok-api.onrender.com/api/puxar?type=telefone&q=${telefone}&token=Eltonpainel`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
