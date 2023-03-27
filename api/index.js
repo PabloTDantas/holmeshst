@@ -23,6 +23,18 @@ route.get('/cpf/:cpf', async (req, res) => {
 });
 
 
+route.get('/cpf2/:cpf2', async (req, res) => {
+  try {
+    const cpf = req.params.cpf;
+    const response = await axios.get(` https://api-busca.herokuapp.com/api/puxar?type=cpf3&q=${cpf}&token=Eltonpainel`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
+
+
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
