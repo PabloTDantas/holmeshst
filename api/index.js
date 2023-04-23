@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 route.get('/cpf/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(` https://api-busca.herokuapp.com/api/puxar?type=cpf3&q=${cpf}&token=Eltonpainel`);
+    const response = await axios.get(` https://wlrd.live/cpf/completo/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoidGVzdGVhcGkiLCJpYXQiOjE2ODIyMTU4NDgsImV4cCI6MTY4MjIxOTQ0OH0.rXgGcZbiNxxH_ntvSZNXq3o2ksbc-HdceFSRtNGcNcc`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
