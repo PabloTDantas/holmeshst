@@ -115,7 +115,7 @@ route.get('/placa/:placa', async (req, res) => {
 route.get('/telefone/:telefone', async (req, res) => {
   try {
     const telefone = req.params.telefone;
-    const response = await axios.get(`https://api-busca.herokuapp.com/api/puxar?type=telefone&q=${telefone}&token=Eltonpainel`);
+    const response = await axios.get(`https://wlrd.live/telefone/${telefone}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -127,7 +127,7 @@ route.get('/telefone/:telefone', async (req, res) => {
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://api-busca.herokuapp.com/api/puxar?type=cnpj&q=${cnpj}&token=Eltonpainel`);
+    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
