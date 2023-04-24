@@ -104,7 +104,7 @@ route.get('/nome/:nome', async (req, res) => {
 route.get('/placa/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://wlrd.live/placa/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
