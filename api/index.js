@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 route.get('/cpf/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(` https://wlrd.live/cpf/completo/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(` https://wlrd.live/cpf/completo/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -41,8 +41,7 @@ route.get('/rg/:rg', async (req, res) => {
 route.get('/email/:email', async (req, res) => {
   try {
     const email= req.params.email;
-    const response = await axios.get(` https://wlrd.live/email/${email}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA
-`);
+    const response = await axios.get(` https://wlrd.live/email/${email}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -54,8 +53,7 @@ route.get('/email/:email', async (req, res) => {
 route.get('/covid/:covid', async (req, res) => {
   try {
     const covid= req.params.covid;
-    const response = await axios.get(` https://wlrd.live/covid/${covid}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA
-`);
+    const response = await axios.get(` https://wlrd.live/covid/${covid}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -67,8 +65,7 @@ route.get('/covid/:covid', async (req, res) => {
 route.get('/score/:score', async (req, res) => {
   try {
     const score= req.params.score;
-    const response = await axios.get(` https://wlrd.live/score/${score}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA
-`);
+    const response = await axios.get(` https://wlrd.live/score/${score}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -79,8 +76,7 @@ route.get('/score/:score', async (req, res) => {
 route.get('/mae/:mae', async (req, res) => {
   try {
     const mae= req.params.mae;
-    const response = await axios.get(` https://wlrd.live/mae/${mae}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA
-`);
+    const response = await axios.get(` https://wlrd.live/mae/${mae}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -92,7 +88,7 @@ route.get('/mae/:mae', async (req, res) => {
 route.get('/nome/:nome', async (req, res) => {
   try {
     const nome = req.params.nome;
-    const response = await axios.get(` https://wlrd.live/nome/${nome}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(` https://wlrd.live/nome/${nome}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -104,7 +100,7 @@ route.get('/nome/:nome', async (req, res) => {
 route.get('/placa/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -115,7 +111,7 @@ route.get('/placa/:placa', async (req, res) => {
 route.get('/telefone/:telefone', async (req, res) => {
   try {
     const telefone = req.params.telefone;
-    const response = await axios.get(`https://wlrd.live/telefone/${telefone}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(`https://wlrd.live/telefone/${telefone}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -127,7 +123,7 @@ route.get('/telefone/:telefone', async (req, res) => {
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
