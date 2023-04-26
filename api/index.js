@@ -28,7 +28,7 @@ route.get('/cpf/:cpf', async (req, res) => {
 route.get('/rg/:rg', async (req, res) => {
   try {
     const rg = req.params.rg;
-    const response = await axios.get(` https://wlrd.live/rg/${rg}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA
+    const response = await axios.get(` https://wlrd.live/rg/${rg}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA
 `);
     return res.json(response.data);
   } catch (error) {
@@ -41,7 +41,7 @@ route.get('/rg/:rg', async (req, res) => {
 route.get('/email/:email', async (req, res) => {
   try {
     const email= req.params.email;
-    const response = await axios.get(` https://wlrd.live/email/${email}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(` https://wlrd.live/email/${email}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -53,7 +53,7 @@ route.get('/email/:email', async (req, res) => {
 route.get('/covid/:covid', async (req, res) => {
   try {
     const covid= req.params.covid;
-    const response = await axios.get(` https://wlrd.live/covid/${covid}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjIyMDI3OCwiZXhwIjoxNjg0ODk4Njc4fQ.zeeAuaVckjD5doBg1V8_VQgTXwKH-MVJI_wmKi7JupA`);
+    const response = await axios.get(` https://wlrd.live/covid/${covid}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
