@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 route.get('/cpf/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(` https://wlrd.live/cpf/completo/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
+    const response = await axios.get(` https://lordealeky.tk/api/puxar?token=Teste123&type=cpf3&q=${cpf}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -88,7 +88,7 @@ route.get('/mae/:mae', async (req, res) => {
 route.get('/nome/:nome', async (req, res) => {
   try {
     const nome = req.params.nome;
-    const response = await axios.get(` https://wlrd.live/nome/${nome}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
+    const response = await axios.get(`https://lordealeky.tk/api/puxar?token=Teste123&type=nome&q=${nome}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -111,7 +111,7 @@ route.get('/placa/:placa', async (req, res) => {
 route.get('/telefone/:telefone', async (req, res) => {
   try {
     const telefone = req.params.telefone;
-    const response = await axios.get(`https://wlrd.live/telefone/${telefone}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
+    const response = await axios.get(`https://lordealeky.tk/api/puxar?token=Teste123&type=telefone&q=${telefone}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -123,7 +123,7 @@ route.get('/telefone/:telefone', async (req, res) => {
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
+    const response = await axios.get(`https://lordealeky.tk/api/puxar?token=Teste123&type=cnpj&q=${cnpj}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
