@@ -100,7 +100,7 @@ route.get('/nome/:nome', async (req, res) => {
 route.get('/placa/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiZG9wYXJpbyIsImlhdCI6MTY4MjQ3OTYxOSwiZXhwIjoxNjgyNTMwMDE5fQ.CXBWxp8kFNTr1h2748khotkfPy3uXDRSBBuDDM1ZHWA`);
+    const response = await axios.get(`https://lordealeky.tk/api/puxar?token=Teste123&type=placa&q=${placa}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
