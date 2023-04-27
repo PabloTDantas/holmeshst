@@ -88,7 +88,7 @@ route.get('/mae/:mae', async (req, res) => {
 route.get('/nome/:nome', async (req, res) => {
   try {
     const nome = req.params.nome;
-    const response = await axios.get(`https://wlrd.live/nome/${nome}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    const response = await axios.get(`https://p7api.xyz/puxadas/nome/${nome}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
