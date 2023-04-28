@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 route.get('/cpf/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(`https://wlrd.live/cpf/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    const response = await axios.get(`https://wlrd.live/cpf/completo${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
