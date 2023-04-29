@@ -164,6 +164,18 @@ route.get('/placa3/:placa', async (req, res) => {
     return res.json({ error: error.message });
   }
 });
+
+route.get('/placa4/:placa', async (req, res) => {
+  try {
+    const placa = req.params.placa;
+    const response = await axios.get(`https://wlrd.live/placa/info/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ
+`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
   
 
 
@@ -204,6 +216,28 @@ route.get('/telefone1/:telefone', async (req, res) => {
       return res.json({ error: error.message });
     }
   });
+
+ route.get('/telefone4/:telefone', async (req, res) => {
+    try {
+      const telefone = req.params.telefone;
+      const response = await axios.get(`https://p7api.xyz/puxluk/tel2/${telefone}`);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+  route.get('/telefone5/:telefone', async (req, res) => {
+    try {
+      const telefone = req.params.telefone;
+      const response = await axios.get(`https://p7api.xyz/puxluk/tel3/${telefone}`);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
   
 //===========================NOMEEEEEEEEEEE===============================================
 
@@ -222,6 +256,30 @@ route.get('/nome/:nome', async (req, res) => {
 
 
   route.get('/nome2/:nome', async (req, res) => {
+    try {
+      const nome = req.params.nome;
+      const response = await axios.get(`https://p7api.xyz/puxluk/nome2/${nome}`);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+
+route.get('/nome3/:nome', async (req, res) => {
+    try {
+      const nome = req.params.nome;
+      const response = await axios.get(`https://p7api.xyz/puxluk/nome/${nome}`);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+
+  route.get('/nome4/:nome', async (req, res) => {
     try {
       const nome = req.params.nome;
       const response = await axios.get(`https://p7api.xyz/puxluk/nome2/${nome}`);
