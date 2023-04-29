@@ -83,6 +83,18 @@ route.get('/placa1/:placa', async (req, res) => {
       return res.json({ error: error.message });
     }
   });
+
+route.get('/placa3/:placa', async (req, res) => {
+  try {
+    const placa = req.params.placa;
+    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ
+`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
   
 
 
