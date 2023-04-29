@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 route.get('/cpf1/:cpf', async (req, res) => {
   try {
     const cpf = req.params.cpf;
-    const response = await axios.get(`https://p7api.xyz/puxluk/cpf1${cpf}`);
+    const response = await axios.get(`https://p7api.xyz/puxluk/cpf1/${cpf}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -27,7 +27,7 @@ route.get('/cpf1/:cpf', async (req, res) => {
 route.get('/cpf2/:cpf', async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf2${cpf}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf2/${cpf}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -39,7 +39,7 @@ route.get('/cpf2/:cpf', async (req, res) => {
   route.get('/cpf3/:cpf', async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3${cpf} `);
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3/${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -50,7 +50,7 @@ route.get('/cpf2/:cpf', async (req, res) => {
   route.get('/cpf4/:cpf', async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf4${cpf} `);
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf4/${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -65,7 +65,7 @@ route.get('/cpf2/:cpf', async (req, res) => {
 route.get('/placa1/:placa', async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://p7api.xyz/puxluk/placa1${placa}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/placa1/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -76,7 +76,7 @@ route.get('/placa1/:placa', async (req, res) => {
   route.get('/placa2/:placa', async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://p7api.xyz/puxluk/placa2${placa}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/placa2/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -94,7 +94,7 @@ route.get('/placa1/:placa', async (req, res) => {
 route.get('/telefone1/:telefone', async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel1${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/tel1/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -105,7 +105,7 @@ route.get('/telefone1/:telefone', async (req, res) => {
   route.get('/telefone2/:telefone', async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel2${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/tel2/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -116,7 +116,7 @@ route.get('/telefone1/:telefone', async (req, res) => {
   route.get('/telefone3/:telefone', async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel3${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/tel3/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -131,7 +131,7 @@ route.get('/telefone1/:telefone', async (req, res) => {
 route.get('/nome/:nome', async (req, res) => {
     try {
       const nome = req.params.nome;
-      const response = await axios.get(`https://p7api.xyz/puxluk/nome${nome}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/nome/${nome}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -143,7 +143,7 @@ route.get('/nome/:nome', async (req, res) => {
   route.get('/nome2/:nome', async (req, res) => {
     try {
       const nome = req.params.nome;
-      const response = await axios.get(`https://p7api.xyz/puxluk/nome2${nome}`);
+      const response = await axios.get(`https://p7api.xyz/puxluk/nome2/${nome}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -172,7 +172,7 @@ route.get('/rg/:rg', async (req, res) => {
 route.get('/email/:email', async (req, res) => {
   try {
     const email= req.params.email;
-    const response = await axios.get(`https://p7api.xyz/puxluk/email${email}`);
+    const response = await axios.get(`https://p7api.xyz/puxluk/email/${email}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -201,7 +201,7 @@ route.get('/covid/:covid', async (req, res) => {
 route.get('/score/:score', async (req, res) => {
   try {
     const score= req.params.score;
-    const response = await axios.get(`https://p7api.xyz/puxluk/score${score}`);
+    const response = await axios.get(`https://p7api.xyz/puxluk/score/${score}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
@@ -224,7 +224,7 @@ route.get('/mae/:mae', async (req, res) => {
 route.get('/cnpj/:cnpj', async (req, res) => {
   try {
     const cnpj = req.params.cnpj;
-    const response = await axios.get(`https://p7api.xyz/puxluk/cnpj${cnpj}`);
+    const response = await axios.get(`https://p7api.xyz/puxluk/cnpj/${cnpj}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
