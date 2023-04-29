@@ -388,7 +388,7 @@ route.get('/cnpj2/:cnpj', async (req, res) => {
 route.get('/vizinho/:vizinho', async (req, res) => {
   try {
     const vizinho = req.params.vizinho;
-    const response = await axios.get(`https://p7api.xyz/puxluk/vizinho/${vizinho}`);
+    const response = await axios.get(`https://p7api.xyz/puxluk/vizinhos/${vizinho}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
