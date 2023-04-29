@@ -244,6 +244,43 @@ route.get('/cnpj/:cnpj', async (req, res) => {
   }
 });
 
+route.get('/cnpj2/:cnpj', async (req, res) => {
+  try {
+    const cnpj = req.params.cnpj;
+    const response = await axios.get(`https://wlrd.live/cnpj/${cnpj}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
+
+
+
+
+route.get('/vizinho/:vizinho', async (req, res) => {
+  try {
+    const vizinho = req.params.cnpj;
+    const response = await axios.get(`https://p7api.xyz/puxluk/vizinho/${vizinho}`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
+
+route.get('/beneficio/:beneficio', async (req, res) => {
+  try {
+    const beneficio = req.params.cnpj;
+    const response = await axios.get(`https://p7api.xyz/puxluk/beneficio/${beneficio}`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
+
+
 
 app.use('/api', route);
 const port = process.env.PORT || 4000;
