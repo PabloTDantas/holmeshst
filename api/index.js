@@ -58,6 +58,75 @@ route.get('/cpf2/:cpf', async (req, res) => {
     }
   });
 
+//===================================DDDDDDDDDDDDDDDDDD========================================
+route.get('/cpf5/:cpf', async (req, res) => {
+  try {
+    const cpf = req.params.cpf;
+    const response = await axios.get(`https://wlrd.live/cpf/simples/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+    return res.json(response.data);
+  } catch (error) {
+    console.log(error);
+    return res.json({ error: error.message });
+  }
+});
+
+route.get('/cpf6/:cpf', async (req, res) => {
+    try {
+      const cpf = req.params.cpf;
+      const response = await axios.get(`https://wlrd.live/cpf/completo/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ`);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+  
+  route.get('/cpf7/:cpf', async (req, res) => {
+    try {
+      const cpf = req.params.cpf;
+      const response = await axios.get(`https://wlrd.live/cpf/esus/${cpf}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ `);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+  route.get('/cpf8/:cpf', async (req, res) => {
+    try {
+      const cpf = req.params.cpf;
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf4/${cpf} `);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+  
+  route.get('/cpf9/:cpf', async (req, res) => {
+    try {
+      const cpf = req.params.cpf;
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3/${cpf} `);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
+  route.get('/cpf10/:cpf', async (req, res) => {
+    try {
+      const cpf = req.params.cpf;
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf4/${cpf} `);
+      return res.json(response.data);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error: error.message });
+    }
+  });
+
 //====================PLACAAAAAAAAAAAA===================
 
 
