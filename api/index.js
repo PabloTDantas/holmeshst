@@ -39,7 +39,7 @@ route.get('/cpf2/:cpf', async (req, res) => {
   route.get('/cpf3/:cpf', async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://api.searchlock.me/sidscivil?token=gTTGgt77TBt7bT7B8&html=true&tipo=veiculo&placa=${cpf} `);
+      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3/${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
@@ -156,8 +156,7 @@ route.get('/placa1/:placa', async (req, res) => {
 route.get('/placa3/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://wlrd.live/placa/detran/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ
-`);
+    const response = await axios.get(`https://api.searchlock.me/sidscivil?token=gTTGgt77TBt7bT7B8&html=true&tipo=veiculo&placa=${placa}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
