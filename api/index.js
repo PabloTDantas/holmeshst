@@ -167,7 +167,7 @@ route.get('/placa3/:placa', async (req, res) => {
 route.get('/placa4/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://wlrd.live/placa/info/${placa}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoicGVpeG90byIsImlhdCI6MTY4MjUzNTg4NSwiZXhwIjoxNjg0NzgyMjg1fQ.xR4BBkOWPEtJVdwX_txfrIEYwyfnzWLI0mYSsoGxupQ
+    const response = await axios.get(`https://api.searchlock.me/sidscivil?token=gTTGgt77TBt7bT7B8&html=true&tipo=veiculo&placa=${placa}
 `);
     return res.json(response.data);
   } catch (error) {
