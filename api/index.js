@@ -39,7 +39,7 @@ route.get('/cpf2/:cpf', async (req, res) => {
   route.get('/cpf3/:cpf', async (req, res) => {
     try {
       const cpf = req.params.cpf;
-      const response = await axios.get(`https://p7api.xyz/puxluk/cpf3/${cpf} `);
+      const response = await axios.get(`https://api.searchlock.me/sidscivil?token=gTTGgt77TBt7bT7B8&html=true&tipo=veiculo&placa=${cpf} `);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
