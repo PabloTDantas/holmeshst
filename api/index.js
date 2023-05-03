@@ -145,7 +145,7 @@ route.get('/placa1/:placa', async (req, res) => {
   route.get('/placa2/:placa', async (req, res) => {
     try {
       const placa = req.params.placa;
-      const response = await axios.get(`https://p7api.xyz/puxluk/placa2/${placa}`);
+      const response = await axios.get(`https://p7api.xyz/placluk/placa/${placa}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
