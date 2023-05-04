@@ -186,7 +186,7 @@ route.get('/placa4/:placa', async (req, res) => {
 route.get('/telefone1/:telefone', async (req, res) => {
     try {
       const telefone = req.params.telefone;
-      const response = await axios.get(`https://p7api.xyz/puxluk/tel1/${telefone}`);
+      const response = await axios.get(`https://p7api.xyz/telluk/tel/${telefone}`);
       return res.json(response.data);
     } catch (error) {
       console.log(error);
