@@ -4,18 +4,7 @@ import cors from 'cors';
 import axios from 'axios';
 const app = express();
 const route = Router();
-const rateLimit = require("express-rate-limit");
 
-
-
-// Define o limite de 100 solicitações por minuto
-const limiter = rateLimit({
-  windowMs: 60 * 1000, // 1 minuto
-  max: 25 // limite de 100 solicitações por minuto
-});
-
-// Aplica o middleware de limite de taxa em todas as rotas
-app.use(limiter);
 
 
 app.use(cors());
