@@ -168,7 +168,7 @@ route.get('/placa1/:placa', async (req, res) => {
 route.get('/placa3/:placa', async (req, res) => {
   try {
     const placa = req.params.placa;
-    const response = await axios.get(`https://api.searchlock.me/sidscivil?token=gTTGgt77TBt7bT7B8&html=true&tipo=veiculo&placa=${placa}`);
+    const response = await axios.get(`https://p7api.xyz/Puxluk2/placa/${placa}`);
     return res.json(response.data);
   } catch (error) {
     console.log(error);
