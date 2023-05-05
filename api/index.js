@@ -9,7 +9,7 @@ import rateLimit from 'express-rate-limit'
 
 const limiter = rateLimit({
   windowMs: 30 * 1000, // 30 segundos
-  max: 2, // limit each IP to 1 request per windowMs
+  max: 2, // limit each IP to 1 request per 
   message: 'Limite de requisições excedido, aguarde 30 segundos antes de tentar novamente.',
 });
 
