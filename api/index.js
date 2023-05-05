@@ -4,8 +4,6 @@ import cors from 'cors';
 import axios from 'axios';
 const app = express();
 const route = Router();
-
-
 app.use(cors());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
