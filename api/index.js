@@ -5,13 +5,14 @@ import axios from 'axios';
 const app = express();
 const route = Router();
 
-const rateLimit = require('express-rate-limit')
-
+import rateLimit from 'express-rate-limit'
 
 const limiter = rateLimit({
-  windowMs: 60 * 60 * 1000, // 1 hour
-  max: 100 // limit each IP to 100 requests per window
+  windowMs: 30 * 1000, // 30 segundos
+  max: 2, // limit each IP to 1 request per windowMs
+  message: 'Limite de requisições excedido, aguarde 30 segundos antes de tentar novamente.',
 });
+
 
 app.use(limiter);
 
