@@ -4,6 +4,15 @@ import cors from 'cors';
 import axios from 'axios';
 const app = express();
 const route = Router();
+const rateLimit = require('express-rate-limit')
+
+
+const limiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 100 // limit each IP to 100 requests per windowMs
+});
+
+app.use(limiter);
 
 
 app.use(cors());
